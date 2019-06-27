@@ -1,7 +1,7 @@
 zmodload zsh/datetime
 zmodload -F zsh/stat b:zstat
 
-k () {
+k_long () {
   # ----------------------------------------------------------------------------
   # Setup
   # ----------------------------------------------------------------------------
@@ -34,7 +34,7 @@ k () {
   # Print Help if bad usage, or they asked for it
   if [[ $? != 0 || "$o_help" != "" ]]
   then
-    print -u2 "Usage: k [options] DIR"
+    print -u2 "Usage: k_long [options] DIR"
     print -u2 "Options:"
     print -u2 "\t-a      --all           list entries starting with ."
     print -u2 "\t-A      --almost-all    list all except . and .."
